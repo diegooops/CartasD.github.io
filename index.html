@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Cartas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mis Cartas Para Tú</h1>
+    <!--<button id="playPauseBtn" class="speaker-btn">🔊</button> -->
+    <audio id="backgroundMusic" src="music.mp3"></audio>
+  </header>
+  
+  <main class="gallery">
+    <div class="cards-container">
+      <!-- Carta 1 -->
+      <div class="card-preview" data-card-id="1">
+        <div class="card-envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <div class="card-title"> </div>
+            <div class="card-date"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carta 2 -->
+      <div class="card-preview" data-card-id="2">
+        <div class="card-envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <div class="card-title"> </div>
+            <div class="card-date"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carta 3 -->
+      <div class="card-preview" data-card-id="3">
+        <div class="card-envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <div class="card-title"></div>
+            <div class="card-date"></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Botón para agregar más cartas (solo visible para el administrador) -->
+
+    </div>
+  </main>
+  
+  <!-- Modal para leer la carta -->
+  <div class="modal" id="letterModal">
+    <div class="modal-content">
+      <div class="container-letter">
+        <div class="cover"></div>
+        <span class="heart">♥</span>
+        <p class="paper" id="mainMessage">
+          <!-- El contenido se cargará dinámicamente -->
+        </p>
+        <div class="letter"></div>
+      </div>
+      <div class="options">
+        <button id="open">Abrir</button>
+        <button id="next">Siguiente</button>
+        <button id="close">Cerrar</button>
+        <button id="closeModal">Volver</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
